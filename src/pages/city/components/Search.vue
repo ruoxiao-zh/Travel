@@ -3,16 +3,16 @@
     <div class="search">
       <input class="search-input" type="text" placeholder="输入城市名或拼音" />
     </div>
-    <div class="search-content">
-      <ul>
-        <li class="search-item border-bottom">
-          12312312
-        </li>
-        <li class="search-item border-bottom">
-          没有找到匹配数据
-        </li>
-      </ul>
-    </div>
+    <!--<div class="search-content">-->
+      <!--<ul>-->
+        <!--<li class="search-item border-bottom">-->
+          <!--12312312-->
+        <!--</li>-->
+        <!--<li class="search-item border-bottom">-->
+          <!--没有找到匹配数据-->
+        <!--</li>-->
+      <!--</ul>-->
+    <!--</div>-->
   </div>
 </template>
 
