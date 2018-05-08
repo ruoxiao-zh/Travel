@@ -2,7 +2,7 @@
   <div>
     <div class="title">热销推荐</div>
     <ul>
-      <li class="item border-bottom" v-for="item of recommendList" :key="item.id">
+      <li class="item border-bottom" v-for="item of list" :key="item.id">
         <img class="item-img" :src="item.imgUrl" />
         <div class="item-info">
           <p class="item-title">{{ item.title }}</p>
@@ -17,25 +17,8 @@
 <script>
 export default {
   name: 'HomeRecommend',
-  data: function () {
-    return {
-      recommendList: [{
-        id: '1001',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1704/a8/a8aa90887648820ba3.img.jpg_200x200_4b2b15a7.jpg',
-        title: '红崖谷',
-        desc: '浪漫红崖谷首站, 浪漫的红崖谷风景区'
-      }, {
-        id: '1002',
-        imgUrl: 'http://img1.qunarzz.com/sight/p95/201211/03/30f3d57d7f4d4e4a93835fbb.jpg_200x200_f3d8cf9f.jpg',
-        title: '石家庄动物园',
-        desc: '浪漫石家庄动物园, 浪漫的石家庄动物园景点'
-      }, {
-        id: '1003',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1606/c4/c42772edf8e85f7390.water.jpg_200x200_43eaab86.jpg',
-        title: '辛玛王国主题乐园',
-        desc: '浪漫辛玛王国主题乐园, 浪漫的辛玛王国主题乐园很好玩'
-      }]
-    }
+  props: {
+    list: Array
   }
 }
 </script>
