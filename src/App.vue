@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" exclude="Detail">
     <!--显示的是当前路由地址所对应的内容-->
     <keep-alive>
       <router-view/>
